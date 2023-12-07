@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="hotel" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.application.main.User</class>
+    <class>com.application.main.ItemsHasInventory</class>
+    <class>com.application.main.Items</class>
+    <class>com.application.main.ItemsHasOrderitem</class>
+    <class>com.application.main.ItemsHasRoom</class>
+    <class>com.application.main.Room</class>
+    <class>com.application.main.Status</class>
+    <class>com.application.main.ClientHasChildren</class>
+    <class>com.application.main.Booking</class>
+    <class>com.application.main.Children</class>
+    <class>com.application.main.Client</class>
+    <class>com.application.main.Role</class>
+    <class>com.application.main.Orderitem</class>
+    <class>com.application.main.Inventory</class>
+    <class>com.application.FXML.ItemsHasOrderitem</class>
+    <class>com.application.FXML.Role</class>
+    <class>com.application.FXML.ItemsHasRoom</class>
+    <class>com.application.FXML.Status</class>
+    <class>com.application.FXML.Booking</class>
+    <class>com.application.FXML.Children</class>
+    <class>com.application.FXML.Client</class>
+    <class>com.application.FXML.User</class>
+    <class>com.application.FXML.Inventory</class>
+    <class>com.application.FXML.Items</class>
+    <class>com.application.FXML.ItemsHasInventory</class>
+    <class>com.application.FXML.Room</class>
+    <class>com.application.FXML.Orderitem</class>
+    <class>com.application.FXML.ClientHasChildren</class>
+    <class>com.application.entity.Children</class>
+    <class>com.application.entity.Items</class>
+    <class>com.application.entity.Client</class>
+    <class>com.application.entity.ItemsHasInventory</class>
+    <class>com.application.entity.ItemsHasRoom</class>
+    <class>com.application.entity.ItemsHasOrderitem</class>
+    <class>com.application.entity.Role</class>
+    <class>com.application.entity.ClientHasChildren</class>
+    <class>com.application.entity.Booking</class>
+    <class>com.application.entity.Orderitem</class>
+    <class>com.application.entity.Inventory</class>
+    <class>com.application.entity.User</class>
+    <class>com.application.entity.Room</class>
+    <class>com.application.entity.Status</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/hotel?serverTimezone=Asia/Novosibirsk&amp;useSSL=false"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+    </properties>
+  </persistence-unit>
+</persistence>
